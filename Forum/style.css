@@ -1,0 +1,201 @@
+#comment-wrapper {
+    width: 100%;
+    height: fit-content;
+}
+
+.replays-wrapper {
+    width: calc(100% - 30px);
+    height: fit-content;
+    padding: 15px;
+}
+
+.comment {
+    width: 100%;
+    height: fit-content;
+    min-height: 150px;
+    margin-bottom: 15px;
+}
+
+.reply {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.comment .comment-details,
+.reply .reply-details {
+    width: 100%;
+    height: fit-content;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.reply .reply-details {
+    margin-left: 70px;
+    width: calc(100% - 70px);
+}
+
+.comment .comment-details .comment-profile {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100px;
+}
+
+.comment .comment-details .comment-profile .comment-profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.reply .reply-details .reply-profile .reply-profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.comment .comment-details .comment-profile a,
+.reply .reply-details .reply-profile a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.comment .comment-details .comment-profile .comment-profile-img img {
+    width: 100%;
+    height: 100%;
+    /*    max-width: 100%;
+    max-height: 100%;*/
+    border-radius: 40px;
+}
+
+.reply .reply-details .reply-profile .reply-profile-img img {
+    width: 100%;
+    height: 100%;
+    /*    max-width: 100%;
+    max-height: 100%;*/
+    border-radius: 40px;
+}
+
+.comment .comment-details .comment-profile + div {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: fit-content;
+}
+
+.reply .reply-details .reply-profile + div {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: fit-content;
+}
+
+.comment .comment-details .comment-body {
+    height: fit-content;
+    padding: 5px;
+    margin: 5px;
+}
+
+.comment .comment-details .likes-container,
+.reply .reply-details .likes-container {
+    margin: 5px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.comment .comment-details .likes-container .like,
+.comment .comment-details .likes-container .dislike,
+.reply .reply-details .likes-container .like,
+.reply .reply-details .likes-container .dislike {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.comment .comment-details .likes-container .like svg,
+.reply .reply-details .likes-container .like svg {
+    transform: rotate(180deg);
+}
+
+.comment .comment-details .likes-container .like:hover svg,
+.comment .comment-details .likes-container .dislike:hover svg,
+.reply .reply-details .likes-container .like:hover svg,
+.reply .reply-details .likes-container .dislike:hover svg {
+    fill: red;
+}
+
+.likes svg {
+    fill: red;
+}
+
+#post-comment form {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+#post-comment button {
+    margin-left: 50px;
+}
+
+#post-comment textarea {
+    width: 75%;
+    height: fit-content;
+    min-height: 40px;
+    margin-right: 15px;
+    font-size: 1.1rem;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+}
+.post-reply form{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.post-reply textarea {
+    width: 70%;
+    height: fit-content;
+    min-height: 40px;
+    margin-right: 15px;
+    font-size: 1.1rem;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+}
+.reply-count{
+    cursor: pointer;
+    height: 40px;
+    width: 80px;
+    background: #ffc107;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
